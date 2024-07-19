@@ -155,6 +155,8 @@ abstract class Striped64 extends Number {
     /**
      * Table of cells. When non-null, size is a power of 2.
      */
+    // We learned from the error message that @Nullable was applied to this field
+    @Nullable
     transient volatile Cell[] cells;
 
     /**
