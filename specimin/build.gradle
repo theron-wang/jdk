@@ -16,8 +16,13 @@ dependencies {
 
 import net.ltgt.gradle.errorprone.CheckSeverity
 
+// Gives "error: package exists in another module: java.base" on later versions
+sourceCompatibility = '1.8'
+
 tasks.withType(JavaCompile) {
+    options.compilerArgs += ['--patch-module', 'java.base=src']
     options.errorprone {
+        disableAllChecks=true
         check('NullAway', CheckSeverity.ERROR)
         option('NullAway:AnnotatedPackages', 'java.util')
     }
