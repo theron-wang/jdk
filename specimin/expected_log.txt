@@ -1,0 +1,2 @@
+error: [NullAway] dereferenced expression cs is @Nullable
+      if (((cs = cells) != null) && ((n = cs.length) > 0)) {
