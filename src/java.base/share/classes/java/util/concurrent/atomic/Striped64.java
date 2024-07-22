@@ -41,6 +41,7 @@ import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.DoubleBinaryOperator;
 import java.util.function.LongBinaryOperator;
+import javax.annotation.Nullable;
 
 /**
  * A package-local class holding common representation and mechanics
