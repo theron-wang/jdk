@@ -1,3 +1,5 @@
+import javax.annotation.Nullable;
+
 public class Issue97 {
     public void assignmentExpression2(@Nullable String[] a0) {
         String[] a1;
